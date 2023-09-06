@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import PrintComponent from "./PrintComponent";
 
 export default function FreeComponent() {
   // set an initial state for the message we will receive after the API call
@@ -31,8 +30,6 @@ export default function FreeComponent() {
 
       {/* displaying our message from our API call */}
       <h3 className="text-center text-danger">{message}</h3>
-
-      <PrintComponent />
     </div>
   );
 }
